@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency's Website</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="p-5 md:p-10 text-gray-800">
+    <!-- Home section -->
+<section class="bg-purple-100 rounded-2xl p-5 mb-10" id="#home">
+    <div class="container rounded mx-auto">
+        <div class="flex">
+            <a class="text-3xl font-bold pr-5 border-r mr-5 border-purple-300" href="index.html">Agency</a>
+            <div class="my-auto">
+                <button class="lg:hidden"  onclick="menuClick()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>                  
+                </button>
+                <ul class="flex font-bold text-gray-600 hidden lg:flex">
+                    <li class="pr-5"><a class="px-3 border py-2 border border-purple-100 hover:border-purple-300 rounded" href="#home">Home</a></li>
+                    <li class="pr-5"><a class="px-3 border py-2 border border-purple-100 hover:border-purple-300 rounded" href="#services">services</a></li>
+                    <li class="pr-5"><a class="px-3 border py-2 border border-purple-100 hover:border-purple-300 rounded" href="#portfolio">Portfolio</a></li>
+                    <li class="pr-5"><a class="px-3 border py-2 border border-purple-100 hover:border-purple-300 rounded" href="#team">Team</a></li>
+                    <li class="pr-5"><a class="px-3 border py-2 border border-purple-100 hover:border-purple-300 rounded" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <a href="" class="flex text-medium bg-red-500 text-white px-3 py-2 rounded font-bold ml-auto">
+                <span class="pr-1 hidden lg:block">Get a Quote</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+                </svg>
+            </a>
+        </div>
+        <div class="hidden" id="mobileMenu">
+            <ul class="lg:hidden font-bold text-gray-600">
+                <li class="mt-3"><a class="py-2" href="#home">Home</a></li>
+                <li class="mt-3"><a class="py-2" href="#services">Services</a></li>
+                <li class="mt-3"><a class="py-2" href="#portfolio">Portfolio</a></li>
+                <li class="mt-3"><a class="py-2" href="#team">Team</a></li>
+                <li class="mt-3"><a class="py-2" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="flex py-12 lg:py-36 flex-wrap">
+            <div class="w-full lg:w-1/2">
+                <h2 class="text-center text-2xl lg:text-left font-bold lg:text-7xl lg:font-semibold">
+                    Digital Agency That Thrives on Your Success
+                </h2>
+                <p class="text-center lg:text-left mt-4 lg:mt-8 text-2xl text-gray-600">
+                    Let's bring life to your brand
+                </p>
+                <div class="flex mt-12 justify-center lg:justify-start">
+                    <a class="mr-5 text-lg bg-purple-600 text-white px-3 py-2 rounded" href="">Services</a>
+                    <a class="mr-5 text-lg bg-red-600 text-white px-3 py-2 rounded" href="">Contact</a>
+                </div>
+            </div>
+            <div class="lg:w-1/2 lg:flex hidden pt-16">
+              <img src="./Images/hero.svg" alt="">
+              <svg id="ba230943-1bdb-4bd0-9561-c7824586c7f7" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="1019.4842" height="436.68123" viewBox="0 0 1019.4842 436.68123"><path d="M314.02808,475.27364a9.75072,9.75072,0,1,0-19.40734,1.28194l-28.01439,36.68607a13.58254,13.58254,0,0,0,1.83575,14.91417l2.19759,2.56354,10.083-2.01667,11.42794-10.08331L290.806,507.19164l14.1167-22.18324-.01825-.01592A9.74283,9.74283,0,0,0,314.02808,475.27364Z" transform="translate(-90.2579 -231.65939)" fill="#ffb9b9"/><polygon points="30.041 422.968 25.468 405.984 88.8 380.265 95.549 405.331 30.041 422.968" fill="#ffb8b8"/><path d="M105.002,663.39128,90.2579,608.62916l.69264-.18651a22.07516,22.07516,0,0,1,27.054,15.57522l.00037.00135L127.01,657.46609Z" transform="translate(-90.2579 -231.65939)" fill="#2f2e41"/><polygon points="117.278 420.254 103.054 409.91 136.185 350.121 157.179 365.388 117.278 420.254" fill="#ffb8b8"/><path d="M201.1368,668.34061,155.27068,634.9853l.42187-.58015a22.07517,22.07517,0,0,1,30.8348-4.87041l.00114.00082L214.54188,649.908Z" transform="translate(-90.2579 -231.65939)" fill="#2f2e41"/><path d="M328.45025,568.36357l-35.795-34.77263a18.07626,18.07626,0,0,0-23.66833-1.3221L201.4006,607.3525l6.05018,9.41084L271.98356,573.069l43.69437,57.13867,41.67764-20.83841Z" transform="translate(-90.2579 -231.65939)" fill="#2f2e41"/><path d="M312.98939,575.75807l-26.21673-2.01667-18.986-4.60272a9.75256,9.75256,0,1,0-1.85,12.65572l-.00277.01364,11.42793,4.70553,49.07181,16.80551,6.05-4.70553Z" transform="translate(-90.2579 -231.65939)" fill="#ffb9b9"/><polygon points="285.92 416.699 271.131 426.11 253.653 426.11 172.315 395.86 53.332 417.371 49.971 391.826 158.871 344.099 254.326 375.693 285.92 416.699" fill="#2f2e41"/><circle cx="254.32577" cy="227.13245" r="26.21658" fill="#ffb9b9"/><path d="M412.41738,563.46316a150.631,150.631,0,0,1-7.3877,46.59159l-1.96286,6.03657-9.4111,43.0221-10.08328,2.68886-7.39442-9.41107-14.78884-10.7555L350.63366,624.158,341.41082,608.791l-2.87712-4.79967-10.08331-50.41649-38.31653-21.511-12.77217-2.01667,2.68889-7.39442,11.42774-15.46106L302.906,505.8472l3.36111-2.68888,2.68888,1.34443,14.82257,5.71013,48.05688-20.304,7.03142,1.14951L403.06674,511.225A150.49912,150.49912,0,0,1,412.41738,563.46316Z" transform="translate(-90.2579 -231.65939)" fill="#ccc"/><polygon points="314.825 325.949 289.281 342.754 251.153 377.131 248.276 372.332 240.209 331.999 242.226 331.999 263.065 293.683 314.825 325.949" opacity="0.1" style="isolation:isolate"/><polygon points="263.065 289.649 242.226 327.965 230.126 341.41 219.371 344.099 248.276 375.693 289.281 338.721 314.825 321.915 263.065 289.649" fill="#ccc"/><path d="M324.19252,439.29866l-2.8405,1.09286a3.96532,3.96532,0,0,1-1.06033-5.50666q.02295-.03393.04661-.06735l-5.24917-.24564a39.63744,39.63744,0,0,1,59.17341-4.76951c.239-.8231,2.84419.7783,3.90783,2.40209.35739-1.33937,2.8001,5.13521,3.66407,9.71188.4-1.52384,1.93791.9362.59056,3.2967.8537-.12472,1.23931,2.05947.57843,3.27633.934-.43878.77654,2.16855-.23609,3.911,1.3327-.11841-.1137,27.33122-20.1137,25.33122-1.39236-6.39749-1-6-2.63957-14.22639-.76312-.81-1.59882-1.54779-2.43315-2.28425l-4.51259-3.9833c-5.2473-4.63182-10.02063-10.34844-17.01093-12.07955-4.80393-1.18968-7.84143-1.45827-5.22344-6.87151-2.36532.98706-4.57411,2.45493-6.96063,3.37169C323.90539,440.90187,324.23894,440.05545,324.19252,439.29866Z" transform="translate(-90.2579 -231.65939)" fill="#2f2e41"/><circle cx="267.43406" cy="230.15744" r="4.70554" fill="#ffb9b9"/><rect x="137.51364" y="351.37595" width="21.61009" height="21.61009" transform="translate(-313.1754 254.44578) rotate(-86.18992)" fill="#e6e6e6" style="isolation:isolate"/><path d="M124.34354,362.13134l26.18282,1.74368-1.74369,26.18282-26.18282-1.74368Zm24.96862,2.80626-23.90605-1.59206-1.59206,23.906,23.90605,1.59206Z" transform="translate(-90.2579 -231.65939)" fill="#ccc"/><rect x="241.00867" y="288.77184" width="21.61009" height="21.61009" transform="translate(-147.57238 -172.07462) rotate(-12.12675)" fill="#e6e6e6" style="isolation:isolate"/><path d="M245.27842,276.50957l5.51255,25.65526-25.65526,5.51254-5.51254-25.65526Zm4.15743,24.7795-5.0332-23.42436-23.42437,5.03319,5.03319,23.42438Z" transform="translate(-90.2579 -231.65939)" fill="#ccc"/><rect x="226.60299" y="392.67408" width="21.61008" height="21.61009" transform="translate(-301.94557 39.64172) rotate(-43.12712)" fill="#e6e6e6" style="isolation:isolate"/><path d="M253.81456,385.99664,234.663,403.93538l-17.93873-19.15156,19.15156-17.93872Zm-19.09885,16.3261,17.48621-16.37883-16.37884-17.48618-17.48621,16.37884Z" transform="translate(-90.2579 -231.65939)" fill="#ccc"/><path d="M1053.535,231.65939H414.15223a17.59849,17.59849,0,0,0-17.59851,17.59849v356.2522a17.59854,17.59854,0,0,0,17.59851,17.59857H1053.535a17.59856,17.59856,0,0,0,17.59851-17.59857V249.25788a17.59852,17.59852,0,0,0-17.59851-17.59849Z" transform="translate(-90.2579 -231.65939)" fill="#3f3d56"/><rect x="329.89003" y="31.10145" width="627.39127" height="353.91303" fill="#fff"/><circle cx="643.04942" cy="15.01449" r="6.43477" fill="#fff"/><polygon points="777.858 385.015 329.89 385.015 329.89 31.102 777.858 385.015" fill="#f2f2f2" style="isolation:isolate"/><circle cx="428.05798" cy="298.22423" r="60.3068" fill="#00bfa6"/><path d="M531.74082,575.21a75.01577,75.01577,0,1,1,75.01581-75.01575A75.01578,75.01578,0,0,1,531.74082,575.21Zm0-149.051A74.03519,74.03519,0,1,0,605.776,500.19428a74.03518,74.03518,0,0,0-74.03522-74.03521Z" transform="translate(-90.2579 -231.65939)" fill="#3f3d56"/><rect x="753.43694" y="214.96957" width="58.60522" height="12.24586" fill="#3f3d56"/><rect x="697.99083" y="148.62679" width="169.49743" height="5.24823" fill="#3f3d56"/><rect x="697.99083" y="169.24617" width="169.49743" height="5.24823" fill="#3f3d56"/><rect x="697.99083" y="189.86555" width="169.49743" height="5.24823" fill="#3f3d56"/><rect x="888.40147" y="52.28163" width="24.49176" height="24.49173" fill="#00bfa6"/><path d="M1014.52225,319.8039h-29.74v-29.74h29.74Zm-28.4469-1.293h27.15381V291.357H986.07529Z" transform="translate(-90.2579 -231.65939)" fill="#ccc"/><path d="M1088.74918,610.23908h-61.22937v-4.41156a.87466.87466,0,0,0-.87463-.87469h-20.993a.87468.87468,0,0,0-.87476.87463v4.41162H991.657v-4.41156a.87468.87468,0,0,0-.8747-.87469H969.7894a.87467.87467,0,0,0-.87469.87469h0v4.41156H955.79416v-4.41156a.87467.87467,0,0,0-.87469-.87469h-20.993a.87468.87468,0,0,0-.8747.87469h0v4.41156H919.93125v-4.41156a.87468.87468,0,0,0-.8747-.87469H898.06363a.87466.87466,0,0,0-.87469.87463v4.41162H884.0684v-4.41156a.87468.87468,0,0,0-.8747-.87469H862.20078a.87467.87467,0,0,0-.87469.87469h0v4.41156H848.20548v-4.41156a.87467.87467,0,0,0-.87469-.87469H826.33787a.87468.87468,0,0,0-.8747.87469h0v4.41156H812.34263v-4.41156a.87468.87468,0,0,0-.8747-.87469H647.02347a.87467.87467,0,0,0-.87469.87469h0v4.41156H633.02817v-4.41156a.87467.87467,0,0,0-.87469-.87469H611.16062a.87468.87468,0,0,0-.8747.87469h0v4.41156h-13.1206v-4.41156a.87466.87466,0,0,0-.87463-.87469h-20.993a.87467.87467,0,0,0-.87469.87469h0v4.41156H561.3024v-4.41156a.87467.87467,0,0,0-.87469-.87469H539.43479a.87468.87468,0,0,0-.8747.87469h0v4.41156H525.43955v-4.41156a.87467.87467,0,0,0-.87469-.87469H503.57194a.87468.87468,0,0,0-.8747.87469h0v4.41156h-13.1206v-4.41156a.87468.87468,0,0,0-.8747-.87469H467.709a.87468.87468,0,0,0-.87469.87463v4.41162H453.71375v-4.41156a.87467.87467,0,0,0-.87466-.87469H431.84617a.8747.8747,0,0,0-.8747.87469h0v4.41156H390.735A20.99292,20.99292,0,0,0,369.74213,631.232v9.4925A20.99291,20.99291,0,0,0,390.735,661.71736h698.01416a20.99293,20.99293,0,0,0,20.99292-20.99286V631.232A20.9929,20.9929,0,0,0,1088.74918,610.23908Z" transform="translate(-90.2579 -231.65939)" fill="#3f3d56"/></svg>  
+            </div>
+        </div>
+        <div class="flex justify-center ml-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+            </svg>
+            <span>Scroll Down</span>
+        </div>
+    </div>
+</section>
+<!-- services section -->
+<section class="bg-red-100 rounded-2xl p-5 mb-10" id="services">
+    <div class="container mx-auto">
+        <div class="lg:py-28 py-16">
+            <h2 class="text-center text-3xl lg:text-5xl font-bold">Our services</h2>
+            <P class="lg:w-1/2 text-center mx-auto mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum laudantium atque, similique autem voluptas distinctio tempora, quibusdam fugiat iure quo incidunt aperiam maiores error enim rerum consequuntur ullam, explicabo nobis.</P>
+        </div>
+        <div class="flex flex-wrap lg:pb-28 pb-16 justify-center">
+            <div class="xl:w-1/3 w-full lg:w-1/2 py-5 lg:p-5">
+                <div class="bg-white p-10 rounded-2xl shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 text-blue-600  mb-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+                    </svg>    
+                    <h3 class="font-bold text-2xl text-gray-700 center">Design</h3>
+                    <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus sed nihil molestiae, nam sint soluta! Voluptas sunt voluptates harum quae consequuntur. Alias non cumque, doloribus sapiente ad quas voluptates quaerat.</p>
+                </div>
+            </div>
+            <div class="xl:w-1/3 w-full lg:w-1/2 py-5 lg:p-5">
+                <div class="bg-white p-10 rounded-2xl shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 text-red-600  mb-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z" />
+                    </svg>                      
+                    <h3 class="font-bold text-2xl text-gray-700 center">Development</h3>
+                    <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus sed nihil molestiae, nam sint soluta! Voluptas sunt voluptates harum quae consequuntur. Alias non cumque, doloribus sapiente ad quas voluptates quaerat.</p>
+                </div>
+            </div>
+            <div class="xl:w-1/3 w-full lg:w-1/2 py-5 lg:p-5">
+                <div class="bg-white p-10 rounded-2xl shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 text-green-600  mb-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
+                    </svg>                      
+                    <h3 class="font-bold text-2xl text-gray-700 center">Digital Marketing</h3>
+                    <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus sed nihil molestiae, nam sint soluta! Voluptas sunt voluptates harum quae consequuntur. Alias non cumque, doloribus sapiente ad quas voluptates quaerat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- companies who trust on us section -->
+<section class="rounded-2xl p-5 mb-10">
+    <div class="container mx-auto lg:px-28">
+        <div class="bg-green-500 p-10 rounded-2xl">
+            <h2 class="font-bold text-center text-3xl text-white">Companies who Trust on us</h2>
+            <div class="flex flex-wrap mt-8 lg:justify-center">
+                <div class="p-5 xl:w-1/4 lg:w-1/3 md:w-1/2 w-full">
+                    <img src="./Images/Amazon.png" alt="" class="max-h-12">
+                </div>
+                <div class="p-5 xl:w-1/4 lg:w-1/3 md:w-1/2 w-full">
+                    <img src="./Images/google-icon.png" alt="" class="max-h-12">
+                </div>
+                <div class="p-5 xl:w-1/4 lg:w-1/3 md:w-1/2 w-full">
+                    <img src="./Images/hp-icon.png" alt=""  class="max-h-12">
+                </div>
+                <div class="p-5 xl:w-1/4 lg:w-1/3 md:w-1/2 w-full">
+                    <img src="./Images/Wipro-logo.png" alt=""  class="max-h-12">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- portfolio section -->
+<section class="bg-red-100 rounded-2xl p-5 mb-10" id="portfolio">
+    <div class="container mx-auto">
+        <div class="lg:py-28 py-16">
+            <h2 class="text-center text-3xl lg:text-5xl font-bold">Our Portfolio</h2>
+            <P class="lg:w-1/2 text-center mx-auto mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum laudantium atque, similique autem voluptas distinctio tempora, quibusdam fugiat iure quo incidunt aperiam maiores error enim rerum consequuntur ullam, explicabo nobis.</P>
+        </div>
+        <div class="flex flex-wrap justify-center mb-24">
+            <div class="w-full md:w-1/2 py-4 md:pt-24">
+                <div class="mx-auto w-full md:w-11/12 lg:w-8/12"><div class="bg-white rounded-3xl shadow-lg">
+                    <img class="rounded-t-3xl" src="./Images/product.png" alt="">
+                    <div class="p-5">
+                        <p>
+                            <span class="px-2 mr-1 bg-red-100 rounded-3xl border border-red-300 py-1">Design</span>
+                            <span class="px-2 ml-1 bg-green-100 rounded-3xl border border-green-300 py-1">Brand</span>
+                        </p>
+                        <h3 class="mt-4 text-2xl font-bold">Design</h3>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 py-4 md:py-12">
+                <div class="mx-auto w-full md:w-11/12 lg:w-8/12"><div class="bg-white rounded-3xl shadow-lg">
+                    <img class="rounded-t-3xl" src="./Images/product.png" alt="">
+                    <div class="p-5">
+                        <p>
+                            <span class="px-2 mr-1 bg-red-100 rounded-3xl border border-red-300 py-1">Design</span>
+                            <span class="px-2 ml-1 bg-green-100 rounded-3xl border border-green-300 py-1">Brand</span>
+                        </p>
+                        <h3 class="mt-4 text-2xl font-bold">Design</h3>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 py-4 md:pt-24">
+                <div class="mx-auto w-full md:w-11/12 lg:w-8/12"><div class="bg-white rounded-3xl shadow-lg">
+                    <img class="rounded-t-3xl" src="./Images/product.png" alt="">
+                    <div class="p-5">
+                        <p>
+                            <span class="px-2 mr-1 bg-red-100 rounded-3xl border border-red-300 py-1">Design</span>
+                            <span class="px-2 ml-1 bg-green-100 rounded-3xl border border-green-300 py-1">Brand</span>
+                        </p>
+                        <h3 class="mt-4 text-2xl font-bold">Design</h3>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 py-4 md:py-12">
+                <div class="mx-auto w-full md:w-11/12 lg:w-8/12"><div class="bg-white rounded-3xl shadow-lg">
+                    <img class="rounded-t-3xl" src="./Images/product.png" alt="">
+                    <div class="p-5">
+                        <p>
+                            <span class="px-2 mr-1 bg-red-100 rounded-3xl border border-red-300 py-1">Design</span>
+                            <span class="px-2 ml-1 bg-green-100 rounded-3xl border border-green-300 py-1">Brand</span>
+                        </p>
+                        <h3 class="mt-4 text-2xl font-bold">Design</h3>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 py-4 md:pt-24">
+                <div class="mx-auto w-full md:w-11/12 lg:w-8/12"><div class="bg-white rounded-3xl shadow-lg">
+                    <img class="rounded-t-3xl" src="./Images/product.png" alt="">
+                    <div class="p-5">
+                        <p>
+                            <span class="px-2 mr-1 bg-red-100 rounded-3xl border border-red-300 py-1">Design</span>
+                            <span class="px-2 ml-1 bg-green-100 rounded-3xl border border-green-300 py-1">Brand</span>
+                        </p>
+                        <h3 class="mt-4 text-2xl font-bold">Design</h3>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex">
+           <a class="mx-auto bg-purple-600 text-white font-semibold text-lg px-5 py-2 rounded mb-24" href="">Explore</a>
+        </div>
+    </div>
+</section>
+<!-- testimonials section -->
+<section class="bg-purple-100 rounded-2xl p-5 mb-10">
+    <div class="container mx-auto">
+        <div class="lg:py-28 py-16">
+            <h2 class="text-center text-3xl lg:text-5xl font-bold">Testimonials</h2>
+            <P class="lg:w-1/2 text-center mx-auto mt-5">what our client says.</P>
+        </div>
+        <div class="mt-10 mb-28 px-10">
+            <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-5">
+                <div class="bg-purple-200 rounded-lg p-10">
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mb-2 text-purple-800">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+                        </svg>
+                    <span>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt ducimus quasi, voluptas veniam enim doloribus? Eveniet, deleniti! Numquam ipsum atque ut repellat, ad iure tempora fuga possimus. Architecto, voluptatibus vitae!
+                    </span>
+                    </p>
+                    <p class="text-purple-900 font-bold mt-6 text-lg">Name</p>
+                    <p class="text-gray-400">
+                        Desgnation , company
+                    </p>
+                    <p class="flex text-green-600 mt-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                      </svg>
+                      </p>
+                      
+                </div>
+                <div class="bg-purple-200 rounded-lg p-10">
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mb-2 text-purple-800">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+                        </svg>
+                    <span>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt ducimus quasi, voluptas veniam enim doloribus? Eveniet, deleniti! Numquam ipsum atque ut repellat, ad iure tempora fuga possimus. Architecto, voluptatibus vitae!
+                    </span>
+                    </p>
+                    <p class="text-purple-900 font-bold mt-6 text-lg">Name</p>
+                    <p class="text-gray-400">
+                        Desgnation , company
+                    </p>
+                    <p class="flex text-green-600 mt-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                      </svg>
+                      </p>
+                      
+                </div>
+                <div class="bg-purple-200 rounded-lg p-10">
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mb-2 text-purple-800">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+                        </svg>
+                    <span>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt ducimus quasi, voluptas veniam enim doloribus? Eveniet, deleniti! Numquam ipsum atque ut repellat, ad iure tempora fuga possimus. Architecto, voluptatibus vitae!
+                    </span>
+                    </p>
+                    <p class="text-purple-900 font-bold mt-6 text-lg">Name</p>
+                    <p class="text-gray-400">
+                        Desgnation , company
+                    </p>
+                    <p class="flex text-green-600 mt-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                      </svg>
+                      </p>
+                      
+                </div>
+                <div class="bg-purple-200 rounded-lg p-10">
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mb-2 text-purple-800">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+                        </svg>
+                    <span>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt ducimus quasi, voluptas veniam enim doloribus? Eveniet, deleniti! Numquam ipsum atque ut repellat, ad iure tempora fuga possimus. Architecto, voluptatibus vitae!
+                    </span>
+                    </p>
+                    <p class="text-purple-900 font-bold mt-6 text-lg">Name</p>
+                    <p class="text-gray-400">
+                        Desgnation , company
+                    </p>
+                    <p class="flex text-green-600 mt-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                      </svg>
+                      </p>
+                      
+                </div>
+                <div class="bg-purple-200 rounded-lg p-10">
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mb-2 text-purple-800">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+                        </svg>
+                    <span>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt ducimus quasi, voluptas veniam enim doloribus? Eveniet, deleniti! Numquam ipsum atque ut repellat, ad iure tempora fuga possimus. Architecto, voluptatibus vitae!
+                    </span>
+                    </p>
+                    <p class="text-purple-900 font-bold mt-6 text-lg">Name</p>
+                    <p class="text-gray-400">
+                        Desgnation , company
+                    </p>
+                    <p class="flex text-green-600 mt-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                      </svg>
+                      </p>
+                      
+                </div>
+                <div class="bg-purple-200 rounded-lg p-10">
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mb-2 text-purple-800">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+                        </svg>
+                    <span>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt ducimus quasi, voluptas veniam enim doloribus? Eveniet, deleniti! Numquam ipsum atque ut repellat, ad iure tempora fuga possimus. Architecto, voluptatibus vitae!
+                    </span>
+                    </p>
+                    <p class="text-purple-900 font-bold mt-6 text-lg">Name</p>
+                    <p class="text-gray-400">
+                        Desgnation , company
+                    </p>
+                    <p class="flex text-green-600 mt-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                      </svg>
+                      </p>
+                      
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- client -->
+<section class="bg-gray-900 rounded-2xl p-5 mb-10">
+    <div class="container mx-auto">
+        <div class="flex flex-wrap">
+            <div class="w-full lg:w-1/2 xl:w-1/4 p-6">
+                <div class="rounded bg-red-500 p-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-24 h-24 mb-4 text-white">
+                        <path fill-rule="evenodd" d="M7.502 6h7.128A3.375 3.375 0 0118 9.375v9.375a3 3 0 003-3V6.108c0-1.505-1.125-2.811-2.664-2.94a48.972 48.972 0 00-.673-.05A3 3 0 0015 1.5h-1.5a3 3 0 00-2.663 1.618c-.225.015-.45.032-.673.05C8.662 3.295 7.554 4.542 7.502 6zM13.5 3A1.5 1.5 0 0012 4.5h4.5A1.5 1.5 0 0015 3h-1.5z" clip-rule="evenodd" />
+                        <path fill-rule="evenodd" d="M3 9.375C3 8.339 3.84 7.5 4.875 7.5h9.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 013 20.625V9.375zM6 12a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H6.75a.75.75 0 01-.75-.75V12zm2.25 0a.75.75 0 01.75-.75h3.75a.75.75 0 010 1.5H9a.75.75 0 01-.75-.75zM6 15a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H6.75a.75.75 0 01-.75-.75V15zm2.25 0a.75.75 0 01.75-.75h3.75a.75.75 0 010 1.5H9a.75.75 0 01-.75-.75zM6 18a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H6.75a.75.75 0 01-.75-.75V18zm2.25 0a.75.75 0 01.75-.75h3.75a.75.75 0 010 1.5H9a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+                    </svg>    
+                    <div class="mt-8">
+                        <p class="text-5xl font-thin">
+                            1000
+                        </p>
+                        <h2 class="text-2xl font-semibold text-red-200 mt">
+                            Client
+                        </h2>
+                    </div> 
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2 xl:w-1/4 p-6">
+                <div class="rounded bg-purple-500 p-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-24 h-24 mb-4 text-white">
+                        <path d="M5.223 2.25c-.497 0-.974.198-1.325.55l-1.3 1.298A3.75 3.75 0 007.5 9.75c.627.47 1.406.75 2.25.75.844 0 1.624-.28 2.25-.75.626.47 1.406.75 2.25.75.844 0 1.623-.28 2.25-.75a3.75 3.75 0 004.902-5.652l-1.3-1.299a1.875 1.875 0 00-1.325-.549H5.223z" />
+                        <path fill-rule="evenodd" d="M3 20.25v-8.755c1.42.674 3.08.673 4.5 0A5.234 5.234 0 009.75 12c.804 0 1.568-.182 2.25-.506a5.234 5.234 0 002.25.506c.804 0 1.567-.182 2.25-.506 1.42.674 3.08.675 4.5.001v8.755h.75a.75.75 0 010 1.5H2.25a.75.75 0 010-1.5H3zm3-6a.75.75 0 01.75-.75h3a.75.75 0 01.75.75v3a.75.75 0 01-.75.75h-3a.75.75 0 01-.75-.75v-3zm8.25-.75a.75.75 0 00-.75.75v5.25c0 .414.336.75.75.75h3a.75.75 0 00.75-.75v-5.25a.75.75 0 00-.75-.75h-3z" clip-rule="evenodd" />
+                      </svg>                       
+                    <div class="mt-8">
+                        <p class="text-5xl font-thin">
+                            1000
+                        </p>
+                        <h2 class="text-2xl font-semibold text-red-200 mt">
+                            Client
+                        </h2>
+                    </div> 
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2 xl:w-1/4 p-6">
+                <div class="rounded bg-red-500 p-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-24 h-24 mb-4 text-white">
+                        <path fill-rule="evenodd" d="M7.502 6h7.128A3.375 3.375 0 0118 9.375v9.375a3 3 0 003-3V6.108c0-1.505-1.125-2.811-2.664-2.94a48.972 48.972 0 00-.673-.05A3 3 0 0015 1.5h-1.5a3 3 0 00-2.663 1.618c-.225.015-.45.032-.673.05C8.662 3.295 7.554 4.542 7.502 6zM13.5 3A1.5 1.5 0 0012 4.5h4.5A1.5 1.5 0 0015 3h-1.5z" clip-rule="evenodd" />
+                        <path fill-rule="evenodd" d="M3 9.375C3 8.339 3.84 7.5 4.875 7.5h9.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 013 20.625V9.375zM6 12a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H6.75a.75.75 0 01-.75-.75V12zm2.25 0a.75.75 0 01.75-.75h3.75a.75.75 0 010 1.5H9a.75.75 0 01-.75-.75zM6 15a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H6.75a.75.75 0 01-.75-.75V15zm2.25 0a.75.75 0 01.75-.75h3.75a.75.75 0 010 1.5H9a.75.75 0 01-.75-.75zM6 18a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H6.75a.75.75 0 01-.75-.75V18zm2.25 0a.75.75 0 01.75-.75h3.75a.75.75 0 010 1.5H9a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+                    </svg>    
+                    <div class="mt-8">
+                        <p class="text-5xl font-thin">
+                            1000
+                        </p>
+                        <h2 class="text-2xl font-semibold text-red-200 mt">
+                            Client
+                        </h2>
+                    </div> 
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2 xl:w-1/4 p-6">
+                <div class="rounded bg-purple-500 p-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-24 h-24 mb-4 text-white">
+                        <path d="M5.223 2.25c-.497 0-.974.198-1.325.55l-1.3 1.298A3.75 3.75 0 007.5 9.75c.627.47 1.406.75 2.25.75.844 0 1.624-.28 2.25-.75.626.47 1.406.75 2.25.75.844 0 1.623-.28 2.25-.75a3.75 3.75 0 004.902-5.652l-1.3-1.299a1.875 1.875 0 00-1.325-.549H5.223z" />
+                        <path fill-rule="evenodd" d="M3 20.25v-8.755c1.42.674 3.08.673 4.5 0A5.234 5.234 0 009.75 12c.804 0 1.568-.182 2.25-.506a5.234 5.234 0 002.25.506c.804 0 1.567-.182 2.25-.506 1.42.674 3.08.675 4.5.001v8.755h.75a.75.75 0 010 1.5H2.25a.75.75 0 010-1.5H3zm3-6a.75.75 0 01.75-.75h3a.75.75 0 01.75.75v3a.75.75 0 01-.75.75h-3a.75.75 0 01-.75-.75v-3zm8.25-.75a.75.75 0 00-.75.75v5.25c0 .414.336.75.75.75h3a.75.75 0 00.75-.75v-5.25a.75.75 0 00-.75-.75h-3z" clip-rule="evenodd" />
+                      </svg>                       
+                    <div class="mt-8">
+                        <p class="text-5xl font-thin">
+                            1000
+                        </p>
+                        <h2 class="text-2xl font-semibold text-red-200 mt">
+                            Client
+                        </h2>
+                    </div> 
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<!-- subscribe -->
+<section class="bg-red-100 rounded-2xl p-5 mb-10">
+    <div class="container mx-auto sm:px-20 py-28">
+        <div class="flex flex-wrap">
+            <div class="w-full lg:w-1/2 lg:pr-5 py-20 flex">
+                <img class="rounded shadow-lg border border-black ml-auto my-auto" src="./Images/product.png" alt="">
+            </div>
+            <div class="w-full lg:w-1/2 lg:pl-5 py-5">
+                <h2 class="text-3xl font-bold md:text-5xl">
+                    Subscribe to our Newsletter
+                </h2>
+                <p class="text-gray-600 mt-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore expedita, magnam molestias quo a fugiat illo quas soluta dolorum possimus aspernatur rerum ab incidunt. Facere fugiat a sapiente nostrum. Impedit.
+                </p>
+                <div class="mt-12">
+                    <form action="">
+                        <div class="flex focus-within border border-purple-500 rounded bg-white">
+                            <div class="w-auto flex px-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 my-auto text-gray-400">
+                                    <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" clip-rule="evenodd" />
+                                  </svg>  
+                            </div>
+                            <div class="w-full">
+                                <span class="block text-gray-300">Enter your name</span> 
+                                <input class="w-full p-1 focus:outline-none border-b" type="text">
+                            </div>
+                        </div>
+                        <div class="flex focus-within border border-purple-500 rounded bg-white mt-4">
+                            <div class="w-auto flex px-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 my-auto text-gray-400">
+                                    <path fill-rule="evenodd" d="M17.834 6.166a8.25 8.25 0 100 11.668.75.75 0 011.06 1.06c-3.807 3.808-9.98 3.808-13.788 0-3.808-3.807-3.808-9.98 0-13.788 3.807-3.808 9.98-3.808 13.788 0A9.722 9.722 0 0121.75 12c0 .975-.296 1.887-.809 2.571-.514.685-1.28 1.179-2.191 1.179-.904 0-1.666-.487-2.18-1.164a5.25 5.25 0 11-.82-6.26V8.25a.75.75 0 011.5 0V12c0 .682.208 1.27.509 1.671.3.401.659.579.991.579.332 0 .69-.178.991-.579.3-.4.509-.99.509-1.671a8.222 8.222 0 00-2.416-5.834zM15.75 12a3.75 3.75 0 10-7.5 0 3.75 3.75 0 007.5 0z" clip-rule="evenodd" />
+                                  </svg>
+                                    
+                            </div>
+                            <div class="w-full">
+                                <span class="block text-gray-300">Enter your E-mail</span> 
+                                <input class="w-full p-1 focus:outline-none border-b" type="text">
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <input class="mr-2" type="checkbox">I Agree
+                            <button class="rounded px-3 py-2 block mt-3 font-semibold text-white bg-purple-400 w-full md:w-auto">
+                                Subscribe 
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- team section -->
+<section class="bg-purple-100 rounded-2xl p-5 mb-10" id="team">
+    <div class="container mx-auto">
+        <div class="lg:py-28 py-16">
+            <h2 class="text-center text-3xl lg:text-5xl font-bold">Our Team</h2>
+            <P class="lg:w-1/2 text-center mx-auto mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, voluptatibus? Maxime quas fuga repudiandae eaque illum enim sit consectetur doloremque, minus necessitatibus aut deserunt quo doloribus magnam expedita provident veritatis?</P>
+        </div>
+        <div class="mt-10 px-10 mb-28">
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
+                <div class="bg-purple-50 rounded-2xl p-10 text-center">
+                    <img class="mx-auto rounded-2xl shadow-lg w-52" src="/Images/team1.jpg" alt="">
+                    <h2 class="text-xl font-medium mt-3 text-purple-900">Name</h2>
+                    <p class="text-gray-400 font-semibold">Designation</p>
+                    <ul class="flex justify-center mt-4">
+                        <li class="p-2 bg-white shadow-md rounded mx-1"><a class="text-gray-100" href=""> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgb(159, 159, 159);transform: msFilter"><path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path></svg>
+                        </a></li>
+                        <li class="p-2 bg-white shadow-md rounded mx-1"><a class="text-gray-100" href=""> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(159, 159, 159);transform: msFilter"><path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"></path></svg>
+                        </a></li>
+                        <li class="p-2 bg-white shadow-md rounded mx-1"><a class="text-gray-100" href=""> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(159, 159, 159);transform:msFilter"><path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path></svg>
+                        </a></li>
+                        <li class="p-2 bg-white shadow-md rounded mx-1"><a class="text-gray-100" href=""> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(159, 159, 159);transform: msFilter"><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="bg-purple-50 rounded-2xl p-10 text-center">
+                    <img class="mx-auto rounded-2xl shadow-lg w-52" src="/Images/team2.jpg" alt="">
+                    <h2 class="text-xl font-medium mt-3 text-purple-900">Name</h2>
+                    <p class="text-gray-400 font-semibold">Designation</p>
+                    <ul class="flex justify-center mt-4">
+                        <li class="p-2 bg-white shadow-md rounded mx-1"><a class="text-gray-100" href=""> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgb(159, 159, 159);transform: msFilter"><path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path></svg>
+                        </a></li>
+                        <li class="p-2 bg-white shadow-md rounded mx-1"><a class="text-gray-100" href=""> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(159, 159, 159);transform: msFilter"><path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"></path></svg>
+                        </a></li>
+                        <li class="p-2 bg-white shadow-md rounded mx-1"><a class="text-gray-100" href=""> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(159, 159, 159);transform:msFilter"><path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path></svg>
+                        </a></li>
+                        <li class="p-2 bg-white shadow-md rounded mx-1"><a class="text-gray-100" href=""> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(159, 159, 159);transform: msFilter"><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="bg-purple-50 rounded-2xl p-10 text-center">
+                    <img class="mx-auto rounded-2xl shadow-lg w-52" src="/Images/team3.jpg" alt="">
+                    <h2 class="text-xl font-medium mt-3 text-purple-900">Name</h2>
+                    <p class="text-gray-400 font-semibold">Designation</p>
+                    <ul class="flex justify-center mt-4">
+                        <li class="p-2 bg-white shadow-md rounded mx-1"><a class="text-gray-100" href=""> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgb(159, 159, 159);transform: msFilter"><path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path></svg>
+                        </a></li>
+                        <li class="p-2 bg-white shadow-md rounded mx-1"><a class="text-gray-100" href=""> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(159, 159, 159);transform: msFilter"><path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"></path></svg>
+                        </a></li>
+                        <li class="p-2 bg-white shadow-md rounded mx-1"><a class="text-gray-100" href=""> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(159, 159, 159);transform:msFilter"><path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path></svg>
+                        </a></li>
+                        <li class="p-2 bg-white shadow-md rounded mx-1"><a class="text-gray-100" href=""> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(159, 159, 159);transform: msFilter"><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="bg-purple-50 rounded-2xl p-10 text-center">
+                    <img class="mx-auto rounded-2xl shadow-lg w-52" src="/Images/team4.jpg" alt="">
+                    <h2 class="text-xl font-medium mt-3 text-purple-900">Name</h2>
+                    <p class="text-gray-400 font-semibold">Designation</p>
+                    <ul class="flex justify-center mt-4">
+                        <li class="p-2 bg-white shadow-md rounded mx-1"><a class="text-gray-100" href=""> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgb(159, 159, 159);transform: msFilter"><path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path></svg>
+                        </a></li>
+                        <li class="p-2 bg-white shadow-md rounded mx-1"><a class="text-gray-100" href=""> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(159, 159, 159);transform: msFilter"><path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"></path></svg>
+                        </a></li>
+                        <li class="p-2 bg-white shadow-md rounded mx-1"><a class="text-gray-100" href=""> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(159, 159, 159);transform:msFilter"><path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path></svg>
+                        </a></li>
+                        <li class="p-2 bg-white shadow-md rounded mx-1"><a class="text-gray-100" href=""> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(159, 159, 159);transform: msFilter"><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="bg-purple-50 rounded-2xl p-10 text-center">
+                    <img class="mx-auto rounded-2xl shadow-lg w-52" src="/Images/team5.jpg" alt="">
+                    <h2 class="text-xl font-medium mt-3 text-purple-900">Name</h2>
+                    <p class="text-gray-400 font-semibold">Designation</p>
+                    <ul class="flex justify-center mt-4">
+                        <li class="p-2 bg-white shadow-md rounded mx-1"><a class="text-gray-100" href=""> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgb(159, 159, 159);transform: msFilter"><path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path></svg>
+                        </a></li>
+                        <li class="p-2 bg-white shadow-md rounded mx-1"><a class="text-gray-100" href=""> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(159, 159, 159);transform: msFilter"><path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"></path></svg>
+                        </a></li>
+                        <li class="p-2 bg-white shadow-md rounded mx-1"><a class="text-gray-100" href=""> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(159, 159, 159);transform:msFilter"><path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path></svg>
+                        </a></li>
+                        <li class="p-2 bg-white shadow-md rounded mx-1"><a class="text-gray-100" href=""> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(159, 159, 159);transform: msFilter"><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="bg-purple-50 rounded-2xl p-10 text-center">
+                    <img class="mx-auto rounded-2xl shadow-lg w-52" src="/Images/team6.jpg" alt="">
+                    <h2 class="text-xl font-medium mt-3 text-purple-900">Name</h2>
+                    <p class="text-gray-400 font-semibold">Designation</p>
+                    <ul class="flex justify-center mt-4">
+                        <li class="p-2 bg-white shadow-md rounded mx-1"><a class="text-gray-100" href=""> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgb(159, 159, 159);transform: msFilter"><path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path></svg>
+                        </a></li>
+                        <li class="p-2 bg-white shadow-md rounded mx-1"><a class="text-gray-100" href=""> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(159, 159, 159);transform: msFilter"><path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"></path></svg>
+                        </a></li>
+                        <li class="p-2 bg-white shadow-md rounded mx-1"><a class="text-gray-100" href=""> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(159, 159, 159);transform:msFilter"><path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path></svg>
+                        </a></li>
+                        <li class="p-2 bg-white shadow-md rounded mx-1"><a class="text-gray-100" href=""> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(159, 159, 159);transform: msFilter"><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- contact section -->
+<section class="bg-red-100 rounded-2xl p-5 mb-10" id="contact">
+    <div class="container mx-auto">
+        <div class="lg:py-28 py-16">
+            <h2 class="text-center text-3xl lg:text-5xl font-bold">Contact Us</h2>
+            <P class="lg:w-1/2 text-center mx-auto mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, voluptatibus? Maxime quas fuga repudiandae eaque illum enim sit consectetur doloremque, minus necessitatibus aut deserunt quo doloribus magnam expedita provident veritatis?</P>
+        </div>
+        <div class="lg:w-1/2 mx-auto mb-28">
+            <form action="">
+                <div class="flex focus-within border border-purple-500 rounded bg-white">
+                    <div class="w-auto flex px-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 my-auto text-gray-400">
+                            <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" clip-rule="evenodd" />
+                          </svg>  
+                    </div>
+                    <div class="w-full">
+                        <span class="block text-gray-300">Enter your name</span> 
+                        <input class="w-full p-1 focus:outline-none border-b" type="text">
+                    </div>
+                </div>
+                <div class="flex focus-within border border-purple-500 rounded bg-white mt-4">
+                    <div class="w-auto flex px-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 my-auto text-gray-400">
+                            <path fill-rule="evenodd" d="M17.834 6.166a8.25 8.25 0 100 11.668.75.75 0 011.06 1.06c-3.807 3.808-9.98 3.808-13.788 0-3.808-3.807-3.808-9.98 0-13.788 3.807-3.808 9.98-3.808 13.788 0A9.722 9.722 0 0121.75 12c0 .975-.296 1.887-.809 2.571-.514.685-1.28 1.179-2.191 1.179-.904 0-1.666-.487-2.18-1.164a5.25 5.25 0 11-.82-6.26V8.25a.75.75 0 011.5 0V12c0 .682.208 1.27.509 1.671.3.401.659.579.991.579.332 0 .69-.178.991-.579.3-.4.509-.99.509-1.671a8.222 8.222 0 00-2.416-5.834zM15.75 12a3.75 3.75 0 10-7.5 0 3.75 3.75 0 007.5 0z" clip-rule="evenodd" />
+                          </svg>       
+                    </div>
+                    <div class="w-full">
+                        <span class="block text-gray-300">Enter your E-mail</span> 
+                        <input class="w-full p-1 focus:outline-none border-b" type="text">
+                    </div>
+                </div>
+                <div class="flex focus-within border border-purple-500 rounded bg-white mt-4">
+                    <div class="w-auto flex px-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 my-auto text-gray-400">
+                            <path fill-rule="evenodd" d="M12 6.75a5.25 5.25 0 016.775-5.025.75.75 0 01.313 1.248l-3.32 3.319c.063.475.276.934.641 1.299.365.365.824.578 1.3.64l3.318-3.319a.75.75 0 011.248.313 5.25 5.25 0 01-5.472 6.756c-1.018-.086-1.87.1-2.309.634L7.344 21.3A3.298 3.298 0 112.7 16.657l8.684-7.151c.533-.44.72-1.291.634-2.309A5.342 5.342 0 0112 6.75zM4.117 19.125a.75.75 0 01.75-.75h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75h-.008a.75.75 0 01-.75-.75v-.008z" clip-rule="evenodd" />
+                            <path d="M10.076 8.64l-2.201-2.2V4.874a.75.75 0 00-.364-.643l-3.75-2.25a.75.75 0 00-.916.113l-.75.75a.75.75 0 00-.113.916l2.25 3.75a.75.75 0 00.643.364h1.564l2.062 2.062 1.575-1.297z" />
+                            <path fill-rule="evenodd" d="M12.556 17.329l4.183 4.182a3.375 3.375 0 004.773-4.773l-3.306-3.305a6.803 6.803 0 01-1.53.043c-.394-.034-.682-.006-.867.042a.589.589 0 00-.167.063l-3.086 3.748zm3.414-1.36a.75.75 0 011.06 0l1.875 1.876a.75.75 0 11-1.06 1.06L15.97 17.03a.75.75 0 010-1.06z" clip-rule="evenodd" />
+                          </svg>                                
+                    </div>
+                    <div class="w-full">
+                        <span class="block text-gray-300">Choose One</span> 
+                        <select class="w-full p-1 focus:outline-none border-b" name="">
+                            <option value="Design">Design</option>
+                            <option value="SEO">SEO</option>
+                            <option value="Email Marketing">Email Marketing</option>
+                            <option value="Web Development">Web Development</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="flex focus-within border border-purple-500 rounded bg-white mt-4">
+                    <div class="w-auto flex px-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 my-auto text-gray-400">
+                            <path fill-rule="evenodd" d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97zM6.75 8.25a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H7.5z" clip-rule="evenodd" />
+                          </svg>                                                                               
+                    </div>
+                    <div class="w-full">
+                        <span class="text-gray-300">Enter your Message</span> 
+                        <textarea class="w-full p-1 focus:outline-none border-b" rows="" cols="">
+                        </textarea>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <button class="rounded px-3 py-2 block mt-3 font-semibold text-white bg-purple-400 w-full md:w-auto">
+                        Submit 
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- blog section -->
+<section class="bg-purple-100 rounded-2xl p-5 mb-10">
+    <div class="container mx-auto">
+        <div class="lg:py-28 py-16">
+            <h2 class="text-center text-3xl lg:text-5xl font-bold">Blogs</h2>
+            <P class="lg:w-1/2 text-center mx-auto mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.</P>
+        </div>
+        <div class="flex flex-wrap justify-center mb-28">
+            <div class="lg:w-1/3 w-full md:w-1/2 p-0 md:p-1">
+                <div class="m-3">
+                    <img class="rounded-t-3xl" src="./Images/blog.png" alt="">
+                    <div class="bg-white rounded-b-3xl p-5">
+                        <h3 class="text-2xl font-bold text-gray-600">Heading of Blog</h3>
+                        <p class="mt-3">
+                            <span class="bg-gray-200 p-1 px-3 rounded-2xl text-sm">Marketing</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-1/3 w-full md:w-1/2 p-0 md:p-1">
+                <div class="m-3">
+                    <img class="rounded-t-3xl" src="./Images/blog.png" alt="">
+                    <div class="bg-white rounded-b-3xl p-5">
+                        <h3 class="text-2xl font-bold text-gray-600">Heading of Blog</h3>
+                        <p class="mt-3">
+                            <span class="bg-gray-200 p-1 px-3 rounded-2xl text-sm">Marketing</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-1/3 w-full md:w-1/2 p-0 md:p-1">
+                <div class="m-3">
+                    <img class="rounded-t-3xl" src="./Images/blog.png" alt="">
+                    <div class="bg-white rounded-b-3xl p-5">
+                        <h3 class="text-2xl font-bold text-gray-600">Heading of Blog</h3>
+                        <p class="mt-3">
+                            <span class="bg-gray-200 p-1 px-3 rounded-2xl text-sm">Marketing</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-1/3 w-full md:w-1/2 p-0 md:p-1">
+                <div class="m-3">
+                    <img class="rounded-t-3xl" src="./Images/blog.png" alt="">
+                    <div class="bg-white rounded-b-3xl p-5">
+                        <h3 class="text-2xl font-bold text-gray-600">Heading of Blog</h3>
+                        <p class="mt-3">
+                            <span class="bg-gray-200 p-1 px-3 rounded-2xl text-sm">Marketing</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-1/3 w-full md:w-1/2 p-0 md:p-1">
+                <div class="m-3">
+                    <img class="rounded-t-3xl" src="./Images/blog.png" alt="">
+                    <div class="bg-white rounded-b-3xl p-5">
+                        <h3 class="text-2xl font-bold text-gray-600">Heading of Blog</h3>
+                        <p class="mt-3">
+                            <span class="bg-gray-200 p-1 px-3 rounded-2xl text-sm">Marketing</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Address section -->
+<section class="rounded-2xl p-5 mb-10">
+    <div class="container text-white mx-auto rounded-3xl bg-gradient-to-r from-blue-400 to-red-400">
+        <div class="lg:py-18 py-16">
+            <h2 class="text-center text-3xl lg:text-5xl font-bold">Let's Do Something New</h2>
+            <P class="lg:w-1/2 text-center mx-auto mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</P>
+            <div class="flex mt-8">
+                <button class="mx-auto bg-white p-2 px-3 text-purple-900 font-semibold rounded text-lg"> Contact Us</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- footer section -->
+<footer class="rounded-2xl p-5 mb-10 text-white bg-black">
+    <div class="flex flex-wrap p-12">
+        <div class="p-5 lg:p-10 md:w-1/3 w-full">
+            <h2 class="font-extrabold text-2xl">Agency </h2>
+            <p class="text-gray-400 mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, fugiat? Asperiores sint eligendi consectetur officia ad quisquam repellendus! Nesciunt beatae consequuntur sed dolorum dolores cupiditate adipisci consequatur necessitatibus eligendi cum?</p>
+        </div>
+        <div class="p-5 lg:p-10 md:w-1/3 w-full">
+            <h2 class="font-extrabold text-2xl">Address</h2>
+            <p class="text-gray-400 mt-3">
+            Address 1<br>
+            Address 2<br>
+            Address 3<br></p>
+        </div>
+        <div class="p-5 lg:p-10 md:w-1/3 w-full">
+            <h2 class="font-extrabold text-2xl">Enquries</h2>
+            <p class="text-gray-400 mt-3">
+            <a href="tel:+91987654321">987654321</a><br>
+            <a href="mailto:contact@gmail.com">example@gmail.com</a><br>
+            Address 1<br></p>
+            <ul class="flex mt-4">
+                <li class="p-2 bg-white shadow-md rounded mx-1"><a class="text-gray-100" href=""> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgb(159, 159, 159);transform: msFilter"><path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path></svg>
+                </a></li>
+                <li class="p-2 bg-white shadow-md rounded mx-1"><a class="text-gray-100" href=""> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(159, 159, 159);transform: msFilter"><path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"></path></svg>
+                </a></li>
+                <li class="p-2 bg-white shadow-md rounded mx-1"><a class="text-gray-100" href=""> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(159, 159, 159);transform:msFilter"><path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path></svg>
+                </a></li>
+                <li class="p-2 bg-white shadow-md rounded mx-1"><a class="text-gray-100" href=""> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgba(159, 159, 159);transform: msFilter"><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="text-center text-gray-500 border-t border-gray-500 pt-4">
+        All Rights Reserved
+    </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
